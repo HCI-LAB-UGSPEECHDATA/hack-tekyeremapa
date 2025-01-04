@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hci-lab-ugspeechdata.github.io/hack-tekyeremapa/static/css/main.04f87264.css",
-    "main.js": "/hci-lab-ugspeechdata.github.io/hack-tekyeremapa/static/js/main.5c771635.js",
+    "main.js": "/hci-lab-ugspeechdata.github.io/hack-tekyeremapa/static/js/main.1ee37843.js",
     "static/media/footer_pic.png": "/hci-lab-ugspeechdata.github.io/hack-tekyeremapa/static/media/footer_pic.e4fd4a4565c42877385a.png",
     "static/media/slick.svg": "/hci-lab-ugspeechdata.github.io/hack-tekyeremapa/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/hci-lab-ugspeechdata.github.io/hack-tekyeremapa/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,10 +9,10 @@
     "static/media/slick.woff": "/hci-lab-ugspeechdata.github.io/hack-tekyeremapa/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/hci-lab-ugspeechdata.github.io/hack-tekyeremapa/index.html",
     "main.04f87264.css.map": "/hci-lab-ugspeechdata.github.io/hack-tekyeremapa/static/css/main.04f87264.css.map",
-    "main.5c771635.js.map": "/hci-lab-ugspeechdata.github.io/hack-tekyeremapa/static/js/main.5c771635.js.map"
+    "main.1ee37843.js.map": "/hci-lab-ugspeechdata.github.io/hack-tekyeremapa/static/js/main.1ee37843.js.map"
   },
   "entrypoints": [
     "static/css/main.04f87264.css",
-    "static/js/main.5c771635.js"
+    "static/js/main.1ee37843.js"
   ]
 }
