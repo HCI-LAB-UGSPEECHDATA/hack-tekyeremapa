@@ -3,7 +3,7 @@ import "./styles/MiddleNavbar.css"; // Import CSS styles
 
 const MiddleNavbar = () => {
   const [isSticky, setIsSticky] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // To handle menu toggle
+  const [isMenuOpen] = useState(false); 
 
   useEffect(() => {
     const handleScroll = () => {

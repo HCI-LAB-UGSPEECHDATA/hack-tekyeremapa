@@ -108,8 +108,8 @@ function HomePage() {
         {/* Sponsors Section */}
         <section id="sponsors" className="section sponsors">
           <h2>Sponsors</h2>
-          <img src="/gdi_hub.png" alt="GDI Hub" />
-          <img src="/hci-black.png" alt="HCI Lab" />
+          <img src={`${process.env.PUBLIC_URL}/gdi_hub.png`} alt="GDI Hub" />
+          <img src={`${process.env.PUBLIC_URL}/hci-black.png`} alt="HCI Lab" />
           <a
             href="https://sites.research.google/euphonia/about/"
             className="euphonia"
