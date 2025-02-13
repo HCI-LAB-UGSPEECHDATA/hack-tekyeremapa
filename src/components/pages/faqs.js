@@ -27,7 +27,7 @@ const FAQItem = ({ question, answer }) => {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Who is speech impaired person?",
+      question: "Who is a speech impaired person?",
       answer:
         "A speech-impaired person is someone who experiences difficulty in producing spoken language or communicating verbally due to a condition or disorder affecting their speech. The conditions include stuttering/stammering, cleft palate, down syndrome, cerebral palsy, etc.",
     },

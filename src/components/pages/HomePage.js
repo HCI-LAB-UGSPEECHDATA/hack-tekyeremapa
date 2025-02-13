@@ -25,7 +25,7 @@ function HomePage() {
             <span className="tag">Team Size: 1-5</span>
           </div>
         </div>
-        {/* Overview, About, Rules, etc. */}
+        {/*About, Rules, etc. */}
         <section id="about" className="section overview">
           <h3>About</h3>
           <div className="about-hack">
@@ -35,7 +35,7 @@ function HomePage() {
               solutions that will make a significant impact on individuals with
               speech impairments in Ghana and beyond.
             </p>
-            <p className="about-2">
+            <p className="about-1">
               At this hackathon, participants will be given the unique
               opportunity to help bridge the communication gap for individuals
               with speech disabilities through the development of cutting-edge
@@ -44,6 +44,25 @@ function HomePage() {
               these areas, the hackathon aims to create accessible tools that
               empower individuals to communicate more effectively in their
               native language, breaking down barriers to inclusion.
+            </p>
+            <p className="about-1">
+              Participants will gain valuable hands-on experience, applying
+              real-world solutions to improve lives while developing
+              problem-solving, technical, and collaboration skills essential for
+              future careers. This event also provides mentorship opportunities
+              from industry experts, offering guidance and support to teams
+              throughout the hackathon.
+            </p>
+            <p className="about-1">
+              <strong>We highly encourage diverse teams to apply</strong>,
+              bringing together different perspectives and backgrounds to create
+              inclusive and impactful innovations.
+            </p>
+            <p className="about-1">
+              This hackathon is part of the Centre for Digital Language
+              Inclusion, delivered by the University of Ghana and the{" "}
+              <strong>Global Disability Innovation(GDI)</strong> Hub, funded by
+              UK aid's AT2030 programme, alongside support from Google.
             </p>
           </div>
           <button className="about-link download-btn" onClick={downloadDataset}>
@@ -98,8 +117,8 @@ function HomePage() {
           <ul>
             <li>Up to £5,000 in awards plus $5000 cash prize</li>
             <li>
-              Mentorship opportunities with experts from Google and GDI Hub,
-              University College of London.
+              Mentorship opportunities with experts from Google and Global
+              Disability Innovation Hub (GDI Hub), University College of London
             </li>
             <li>A potential scholarship for an MSc in Computer Science.</li>
           </ul>
@@ -118,6 +137,11 @@ function HomePage() {
           >
             Project Euphonia
           </a>
+          {/* AT2030 SVG Logo */}
+          <img src={`${process.env.PUBLIC_URL}/AT2030.png`} alt="at2030" />
+
+          {/* UK Aid SVG Logo */}
+          <img src={`${process.env.PUBLIC_URL}/UKaid.png`} alt="ukaid" />
         </section>
       </div>
 
