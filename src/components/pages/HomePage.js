@@ -56,7 +56,7 @@ function HomePage() {
             <p className="digital-language-inclusion">
               The{" "}
               <a
-                href="https://www.disabilityinnovation.com/"
+                href="https://www.cdl-inclusion.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
