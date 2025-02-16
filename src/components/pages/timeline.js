@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/timeline.css";
 
-const TimelineItem = ({ title, startDate, endDate, description }) => {
+const TimelineItem = ({ title, From, To, description }) => {
   return (
     <div className="timeline-item">
       <div className="timeline-dot">
@@ -16,8 +16,8 @@ const TimelineItem = ({ title, startDate, endDate, description }) => {
       </div>
       <div className="timeline-content">
         <div className="timeline-dates">
-          <p>Start : {startDate}</p>
-          <p>End : {endDate}</p>
+          <p>From : {From}</p>
+          <p>To : {To}</p>
         </div>
         <h3 className="timeline-title">{title}</h3>
         <p className="timeline-description">{description}</p>
@@ -29,39 +29,59 @@ const TimelineItem = ({ title, startDate, endDate, description }) => {
 const Timeline = () => {
   const timelineData = [
     {
-      title: "Hackathon Applications Open",
-      startDate: "1-Feb-2025",
-      endDate: "30-Mar-2025",
+      title: "Hackathon Application Opens",
+      From: "Now",
+      To: "30-Mar-2025",
       description:
-        "Submit your application to participate in the hackathon. Register early to avoid missing out!",
+        "The application period for the hackathon begins. Interested participants can submit their applications to join the competition. Register early to secure your spot!",
     },
     {
-      title: "Selection of Final 8",
-      startDate: "31-Mar-2025",
-      endDate: "14-Apr-2025",
+      title: "Notify Selected Participants",
+      From: "5-Apr-2025",
+      To: "5-Apr-2025",
       description:
-        "The final 8 teams will be selected based on their project proposals and submitted applications.",
+        "Successful applicants will be notified and provided with details on the next steps, including team formation and mentorship opportunities.",
     },
     {
-      title: "Remote Mentoring",
-      startDate: "21-Apr-2025",
-      endDate: "18-May-2025",
+      title: "Awareness Campaign and Team Outreach",
+      From: "7-Apr-2025",
+      To: "15-Apr-2025",
       description:
-        "Selected teams will receive mentoring remotely to refine their ideas and prepare for the face-to-face mentoring phase.",
+        "An outreach campaign will be conducted to engage selected participants, introduce them to the hackathon objectives, and provide resources for team collaboration.",
     },
     {
-      title: "Face to Face Mentoring",
-      startDate: "19-May-2025",
-      endDate: "25-May-2025",
+      title: "Online Bootcamp and Dataset Introduction",
+      From: "21-Apr-2025",
+      To: "30-Apr-2025",
       description:
-        "Teams will engage in in-person mentoring to fine-tune their projects and get expert guidance.",
+        "Participants will take part in an online bootcamp, where they will be introduced to key datasets, tools, and best practices for developing their solutions.",
     },
     {
-      title: "Hackathon Week",
-      startDate: "26-May-2025",
-      endDate: "30-May-2025",
+      title: "Ideation Sprint with Mentor Reviews",
+      From: "19-May-2025",
+      To: "1-May-2025",
       description:
-        "The hackathon week begins, where teams will work intensively on their final presentations and projects.",
+        "Teams will engage in an ideation sprint, refining their concepts with feedback from mentors to ensure innovative and impactful solutions.",
+    },
+    {
+      title: "In-Person Mentoring Sessions",
+      From: "19-May-2025",
+      To: "23-May-2025",
+      description:
+        "Selected teams will meet with mentors for intensive in-person mentoring, receiving expert guidance to refine their projects ahead of the final event.",
+    },
+    {
+      title: "Hackathon Event",
+      From: "26-May-2025",
+      To: "30-May-2025",
+      description:
+        "The main hackathon event takes place! Teams will work intensively on their projects, build prototypes, and present their solutions for evaluation.",
+    },
+    {
+      title: "Post-Event Feedback and Follow-Up",
+      From: "1-Jun-2025",
+      description:
+        "After the hackathon, participants will receive feedback, explore potential project continuation opportunities, and network with industry experts.",
     },
   ];
 
@@ -73,8 +93,8 @@ const Timeline = () => {
           <TimelineItem
             key={index}
             title={item.title}
-            startDate={item.startDate}
-            endDate={item.endDate}
+            From={item.From}
+            To={item.To}
             description={item.description}
           />
         ))}

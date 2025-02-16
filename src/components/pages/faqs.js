@@ -32,19 +32,20 @@ const FAQSection = () => {
         "A speech-impaired person is someone who experiences difficulty in producing spoken language or communicating verbally due to a condition or disorder affecting their speech. The conditions include stuttering/stammering, cleft palate, down syndrome, cerebral palsy, etc.",
     },
     {
+      question: "Why take part in the hackathon?",
+      answer:
+        "This hackathon presents a unique opportunity to develop real-world solutions to real-world problems, making a meaningful impact on the lives of millions of individuals with speech impairments.",
+    },
+    {
       question: "Who can participate in the hackathon?",
       answer:
-        "University students with experience in programming language. Participants must register as a team (up to 3 to 5 members). We are looking for analytically sharp and logical thinkers who are ready to create accessible and inclusive technological solutions for speech-impaired individuals.",
+        "We highly encourage diverse teams to apply. Each team can have up to five members, including at least one female and, preferably, one individual with speech impairment.",
     },
+
     {
-      question: "What should I bring to the finale if shortlisted?",
+      question: "Whom should we contact?",
       answer:
-        "Participants are required to bring their laptops and any other tools or resources they may need for development.",
-    },
-    {
-      question: "Whom should we contact in case of any queries?",
-      answer:
-        "You can contact at speechdata@ug.edu.gh in case you have any queries.",
+        "You can contact speechdata@ug.edu.gh or visit the HCI Lab, Department of Computer Science, University of Ghana, Legon",
     },
   ];
 

@@ -30,41 +30,87 @@ function HomePage() {
           <h3>About</h3>
           <div className="about-hack">
             <p className="about-1">
-              The Tɛkyerɛma Pa Hackathon 2025 invites all university students
-              and technology advocates to participate in creating innovative
-              solutions that will make a significant impact on individuals with
-              speech impairments in Ghana and beyond.
+              The Centre for Digital Language Inclusion(CDLI) is delighted to
+              introduce its first hackathon to bridge the communication gap for
+              individuals with speech disabilities through the development of
+              technological solution that leverages automatic speech recognition
+              or Text-to-Speech (TTS). 
+            </p>
+            <p className="about-1">
+              The Tɛkyerɛma Pa (Good tongue) Hackathon 2025 invites all
+              university students and technology advocates to participate in
+              creating innovative solutions that will make a significant impact
+              on individuals with speech impairments in Ghana and beyond.
             </p>
             <p className="about-1">
               At this hackathon, participants will be given the unique
-              opportunity to help bridge the communication gap for individuals
-              with speech disabilities through the development of cutting-edge
-              technologies such as Text-to-Speech (TTS) and automatic speech
-              recognition (ASR) tailored for Ghanaian languages. By focusing on
-              these areas, the hackathon aims to create accessible tools that
+              opportunity to help bridge the communication gap for individuals
+              with speech disabilities through the development of technological
+              solution that leverage automatic speech recognition or
+              Text-to-Speech (TTS) tailored for Ghanaian languages. By focusing
+              on these areas, the hackathon aims to create accessible tools that
               empower individuals to communicate more effectively in their
               native language, breaking down barriers to inclusion.
             </p>
-            <p className="about-1">
-              Participants will gain valuable hands-on experience, applying
-              real-world solutions to improve lives while developing
-              problem-solving, technical, and collaboration skills essential for
-              future careers. This event also provides mentorship opportunities
-              from industry experts, offering guidance and support to teams
-              throughout the hackathon.
-            </p>
-            <p className="about-1">
-              <strong>We highly encourage diverse teams to apply</strong>,
-              bringing together different perspectives and backgrounds to create
-              inclusive and impactful innovations.
-            </p>
-            <p className="about-1">
-              This hackathon is part of the Centre for Digital Language
-              Inclusion, delivered by the University of Ghana and the{" "}
-              <strong>Global Disability Innovation(GDI)</strong> Hub, funded by
-              UK aid's AT2030 programme, alongside support from Google.
+
+            <p className="digital-language-inclusion">
+              The{" "}
+              <a
+                href="https://www.disabilityinnovation.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Centre for Digital Language Inclusion
+              </a>{" "}
+              is led by the{" "}
+              <a
+                href="https://www.disabilityinnovation.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Global Disability Innovation Hub
+              </a>{" "}
+              in partnership with{" "}
+              <a
+                href="https://www.ucl.ac.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                University College London (UCL)
+              </a>{" "}
+              and the
+              <a
+                href="https://www.ug.edu.gh/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                University of Ghana (UG)
+              </a>
+              , funded by{" "}
+              <a
+                href="https://www.gov.uk/international-development-funding/at2030"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                UK aid's AT2030 programme
+              </a>
+              , alongside support from{" "}
+              <a
+                href="https://www.google.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google
+              </a>
+              .
             </p>
           </div>
+          <p className="about-1">
+            A curated dataset of selected Ghanaian languages namely Akan, Ewe,
+            Ga, Dagbani, and Dagaare is available to participants to support
+            their project.
+          </p>
           <button className="about-link download-btn" onClick={downloadDataset}>
             Link to Dataset
           </button>
@@ -103,7 +149,6 @@ function HomePage() {
           <ul>
             <li>Each team is expected to have a maximum of 5 members.</li>
             <li>Each team must include at least one female participant.</li>
-            <li>All code must be written during the hackathon.</li>
             <li>
               Preferably, each team should have an individual with any form of
               speech impairment.
@@ -115,30 +160,36 @@ function HomePage() {
         <section id="prizes" className="section awards">
           <h3>Awards</h3>
           <ul>
-            <li>Up to £5,000 in awards plus $5000 cash prize</li>
+            <li>
+              Up to $5,000 in cash awards
+              <ul className="prizes-list">
+                <li>1st place: $2,500</li>
+                <li>2nd place: $1,500</li>
+                <li>3rd place: $1,000</li>
+              </ul>
+            </li>
             <li>
               Mentorship opportunities with experts from Google and Global
               Disability Innovation Hub (GDI Hub), University College of London
             </li>
-            <li>A potential scholarship for an MSc in Computer Science.</li>
+            <li>
+              Potential MSc Scholarship Opportunities at the Human-Computer
+              Interaction lab, Department of Computer Science, University of
+              Ghana
+            </li>
           </ul>
         </section>
         <FAQSection />
         {/* Sponsors Section */}
         <section id="sponsors" className="section sponsors">
           <h2>Sponsors</h2>
-          <img src={`${process.env.PUBLIC_URL}/gdi_hub.png`} alt="GDI Hub" />
-          <img src={`${process.env.PUBLIC_URL}/hci-black.png`} alt="HCI Lab" />
-          <a
-            href="https://sites.research.google/euphonia/about/"
-            className="euphonia"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Project Euphonia
-          </a>
+          <img src={`${process.env.PUBLIC_URL}/ucl.png`} alt="UCL Hub" />
+          <img src={`${process.env.PUBLIC_URL}/ug.png`} alt="UG HCI Lab" />
           {/* AT2030 SVG Logo */}
           <img src={`${process.env.PUBLIC_URL}/AT2030.png`} alt="at2030" />
+
+          {/* CDLI SVG Logo */}
+          <img src={`${process.env.PUBLIC_URL}/CDLI.png`} alt="cdli" />
 
           {/* UK Aid SVG Logo */}
           <img src={`${process.env.PUBLIC_URL}/UKaid.png`} alt="ukaid" />
@@ -154,7 +205,7 @@ function HomePage() {
             Don't miss out on this amazing opportunity to make a difference!
           </p>
           <Link
-            to="https://link.webropol.com/s/hacktetremapa"
+            to="https://link.webropol.com/s/Tekyeremapahackathon"
             className="register-button"
             target="_blank"
             rel="noopener noreferrer"
@@ -167,7 +218,7 @@ function HomePage() {
         <div className="qr-code-container">
           <h3>Scan the QR Code to Register</h3>
           <QRCodeSVG
-            value="https://link.webropol.com/s/hacktetremapa"
+            value="https://link.webropol.com/s/Tekyeremapahackathon"
             size={200}
           />
         </div>

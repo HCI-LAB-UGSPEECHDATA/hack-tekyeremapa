@@ -84,8 +84,8 @@
   font-weight: bold;
   cursor: pointer;
   border: none;
-  padding: 20px 20px;
-  border-radius: 5px;
+  padding: 10px 10px;
+  border-radius: 8px;
   transition: background-color 0.3s ease;
   margin-bottom: 20px;
 }
@@ -163,6 +163,38 @@
   color: #0b0521;
 }
 
+.digital-language-inclusion {
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.6;
+  color: #333; /* Standard readable color */
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.digital-language-inclusion a {
+  color: #004080; /* Deep blue for a professional look */
+  font-weight: bold;
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Ensures visited links remain the same color */
+.digital-language-inclusion a:visited {
+  color: #004080; /* Keeps same color even after clicking */
+}
+
+/* Hover effect */
+.digital-language-inclusion a:hover {
+  color: #ff9900; /* Changes color on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Active state (when clicking) */
+.digital-language-inclusion a:active {
+  color: #ff6600; /* Slightly darker orange on click */
+}
+
 /* Sponsors Section */
 .sponsors {
   display: flex;
@@ -173,6 +205,10 @@
   align-items: center;
   margin-top: 20px;
   width: 100%;
+}
+.prizes-list {
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .sponsors a {
