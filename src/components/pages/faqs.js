@@ -44,7 +44,7 @@ const FAQSection = () => {
     {
       question: "Whom should we contact in case of any queries?",
       answer:
-        "You can contact at hcidcsug@gmail.com in case you have any queries.",
+        "You can contact at speechdata@ug.edu.gh in case you have any queries.",
     },
   ];
 
